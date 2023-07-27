@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;700&family=Poppins&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>PTSU System</title>
+    <style>
+      h1, h2, h3, h4, h5 ,h6, p{
+        font-family: 'Poppins', sans-serif;
+      }
+      ul.navbar {
+        list-style-type: none;
+        margin-left: 60px;
+        padding: 0;
+        overflow: hidden;
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        border-right-width: 1px;
+        border-right-color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 0px;
+      }
+      .container {
+        width: 100%;
+      }
+
+      .bg-color {
+        background-color: rgb(56, 56, 56);
+      }
+
+      body {
+        margin: 0px;
+        overflow-x: hidden;
+        background-color: #e6dada;
+      }
+      ul.navbar li {
+        float: left;
+      }
+      ul.navbar li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 19px;
+        padding-left: 0px;
+        text-decoration: none;
+        border-right-color: #ffffff;
+        border-right-width: 1px;
+      }
+      ul.navbar li a:hover {
+        color: #d996f3;
+        transition: all 0.75s;
+      }
+      ul.navbar-1 a {
+        display: block;
+        float: right;
+        color: white;
+        margin: 15px;
+        padding: 0px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      ul.navbar-1 a:hover {
+        color: #cf44eb;
+        transition: all 0.75s;
+      }
+      .navbar-1,
+      .navbar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      body > div.sectionfull > div > div > section:nth-child(19) > div:nth-child(1), body > div.sectionfull > div > div > section:nth-child(20) > div:nth-child(1) {
+      width: 50%;
+      }
+      .Margintopx1 {
+        margin-top: 10px;
+        margin-right: -420px;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .column {
+        flex: 50%;
+      }
+      .header-container {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-self: flex-start;
+      }
+      .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+      }
+      .menu li {
+        display: inline-block;
+      }
+      .menu li a {
+        display: block;
+        color: #333333;
+        text-decoration: none;
+        padding: 25px 7px;
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+      }
+      .menu li a:hover {
+        color: #000000 !important;
+        transition: all 0.45s;
+        transition-timing-function: ease-in-out;
+        transform: scaleX(1.05);
+      }
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(95, 94, 94, 0.2);
+        z-index: 1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown-content a {
+        color: #333;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #e6dada;
+        color: #000000;
+      }
+      .logo-size {
+        width: 375px;
+        height: 46px;
+      }
+      .logo-size-ptsu {
+        width: 75px;
+        height: 82px;
+      }
+     .box {
+       text-align: center;
+       width: 100%;
+    }
+    .image-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    height: 15vh; 
+    margin: 0;
+}
+.image-container2 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    height: 15vh; 
+    margin: 0;
+}
+.image-container img {
+  margin: 10px;
+  width: 120px;
+}
+.video-container {
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  position: relative;
+  padding-bottom: 20%;
+  padding-top: 20%;
+  height: 0%;
+  overflow: hidden;
+  max-width: 200%;
+}
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+    .marginleftx1{
+      margin-left: 5px;
+    }
+    .columnx1{
+      flex: 100%;
+    }
+    .columnx2{
+      flex:50%;
+    }
+    .row-auto{
+      justify-content: center; 
+      align-items: center; 
+      display: flex;
+      margin: auto;
+    }
+    .container-1600{
+      width:1400px;
+      margin:auto
+    }
+    .sectionfull{
+      max-width:100%;
+    }
+    .columnx3{
+      flex:25px;
+    }
+    .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .button {
+    background-color: #9941eb;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    text-align: center;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 44px;
+    cursor: pointer;
+    transition: background-color 1.3s, color 1.3s;
+  }
+  .button4 {
+    background-color: #9941eb;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    text-align: center;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 1.3s, color 1.3s;
+  }
+  .button5 {
+    background-color: #9941eb;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    text-align: center;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 1.3s, color 1.3s;
+  }
+  .button6 {
+    background-color: #9941eb;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    text-align: center;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 1.3s, color 1.3s;
+  }
+  .button:hover {
+    background-color: #333333;
+    color: #eb4444;
+    text-align: center;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    transition: all 0.45s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(1.05);
+  }
+  .button4:hover {
+    background-color: #dbdac1;
+    color: #cf44eb;
+    text-align: center;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    transition: all 0.45s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(1.05);
+  }
+  .button5:hover {
+    background-color: #dbdac1;
+    color: #cf44eb;
+    text-align: center;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    transition: all 0.45s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(1.05);
+  }
+  .button6:hover {
+    background-color: #dbdac1;
+    color: #cf44eb;
+    text-align: center;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    transition: all 0.45s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(1.05);
+  }
+.container-card{
+  display: flex;
+  box-sizing: border-box ;
+  padding: 0;
+  margin-right: 40px;
+  justify-content: center;
+  }
+  .container-card2{
+  display: flex;
+  box-sizing: border-box ;
+  padding: 0;
+  margin-right: 40px;
+  justify-content: center;
+  margin-bottom: -46px;
+  }
+  .card {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+    background: white;
+    width: 100%;
+    height: 400px;
+    margin: 2px;
+    border-radius: 15px;
+    text-align: justify;
+    transition: all 0.45s;
+    transition-timing-function: ease-out;
+    transform: scaleX(1.03);
+  }
+  .card-temporary {
+    width: 100%;
+    height: 400px;
+    margin: 2px;
+    border-radius: 15px;
+    text-align: justify;
+  }
+  .card-image {
+    font-family: "Poppins", sans-serif;
+    height: 300px;
+    margin-bottom: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px ;
+    background-size: cover;
+    background-position: center;
+  }
+  .Uchiha1 {
+    background-image: url(madara1.jpg);
+  }
+  .Uchiha2{
+    background-image: url(sasuke2.jpg);
+  }
+  .Uchiha3 {
+    background-image: url(obito3.jpg);
+  }
+  .Uchiha4 {
+    background-image: url(Indra1.jpg);
+  }
+  .Uchiha5 {
+    background-image: url(Itachi1.jpg);
+  }
+  .Uchiha6 {
+    background-image: url(Shin1.jpg);
+  }
+  .Uchiha7 {
+    background-image: url(Shisui1.jpg);
+  }
+  .Uchiha8 {
+    background-image: url(Sarada1.jpg);
+  }
+  .card:hover{
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.45s;
+    transition-timing-function: ease-out;
+    transform: scaleX(1.0);
+  }
+  .card a {
+    background-color: whitesmoke;
+    color: white;
+    display: block;
+    text-align: center;
+  }
+  .card h2 {
+    padding: 0px;
+    text-align: center;
+    font-size: 16px;
+  }
+.marginbottomx1{
+  margin-bottom: 20px !important;
+}
+.card-media {
+    background: white;
+    width: 100%;
+    height: 400px;
+    margin: 5px;
+    border-radius: 8px;
+    text-align: justify;
+    background-size: cover;
+  }
+  .card-media-1 {
+    background-image: url(Goldroger.jpg);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .card-media-2 {
+    background-image: url(Newgate.jpg);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .card-media-3 {
+    background-image: url(Kaido.jpg);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .container-footer {
+    margin-top: 10px;
+  }
+  body > div.sectionfull > footer > div.container-1600 {
+    width: 1200px;
+}
+  </style>
+  <link rel="icon" type="image/png" href="pxfuel.jpg" 26x26>
+
+  </head>
+  <body>
+ 
+    <div class="container" style="position: sticky;top: 0;z-index: 100;transition: background-color 0.3s ease; background-color: #ffffff;">
+      <div class="section">
+        <div class="bg-color">
+          <div class="row">
+            <div class="column">
+              <ul class="navbar navbar-container">
+                <li>
+                  <a href="https://www.ustp.edu.ph/career-center/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Career Center <span style="margin-left: 10px">|</span></a>
+                </li>
+                <li>
+                  <a href="https://www.ustp.edu.ph/week-of-welcome/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Student Affairs <span style="margin-left: 10px">|</span></a>
+                </li>
+                <li>
+                  <a href="https://www.ustp.edu.ph/alumni-federation/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Alumni Affairs <span style="margin-left: 10px">|</span></a>
+                </li>
+                <li>
+                  <a href="https://www.ustp.edu.ph/employees/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Employees <span style="margin-left: 10px">|</span></a>
+                </li>
+                <li>
+                  <a href="https://www.ustp.edu.ph/covid19-initiatives/"
+                    ><i class="fa-solid fa-ear-listen"></i> COVID-19 Response</a>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="navbar-1 Margintopx1">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="padding-top: 25px; padding-bottom: 25px;background-color:#e6dada;" >
+          <div class="column">
+            <div class="header-container">
+              <a href="#"><img
+                class="logo-size-ptsu"
+                style="margin-left: 60px"
+                src="blackat.jpg"
+                alt=""
+              /></a>
+              <a href="#"><img class="logo-size Margintopx1" src="ptsu.jpg" alt="" /></a>
+            </div>
+          </div>
+          <div class="column">
+            <ul class="menu">
+              <li class="dropdown">
+                <a href="#">About<i class="fa-solid fa-angle-down marginleftx1"></i></a>
+                <div class="dropdown-content">
+                  <a href="#">About PTSU 1</a>
+                  <a href="#">About PTSU 1</a>
+                  <a href="#">About PTSU 3</a>
+                  <a href="#">About PTSU 4</a>
+                  <a href="#">About PTSU 5</a>
+                  <a href="#">About PTSU 6</a>
+                  <a href="#">About PTSU 7</a>
+                  <a href="#">About PTSU 8</a>
+                  <a href="#">About PTSU 9</a>
+                  <a href="#">About PTSU 10</a>
+              <li class="dropdown">
+                <a href="#">Academic<i class="fa-solid fa-angle-down marginleftx1"></i></a>
+                <div class="dropdown-content">
+                  <a href="#">PTSU Academic 1</a>
+                  <a href="#">PTSU Academic 2</a>
+                  <a href="#">PTSU Academic 3</a>
+                  <a href="#">PTSU Academic 4</a>
+                  <a href="#">PTSU Academic 5</a>
+                  <a href="#">PTSU Academic 6</a>
+                  <a href="#">PTSU Academic 7</a>
+                  <a href="#">PTSU Academic 8</a>
+                  <a href="#">PTSU Academic 9</a>
+                  <a href="#">PTSU Academic 10</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Research, Innovation & Entrepreneurship<i class="fa-solid fa-angle-down marginleftx1"></i></a>
+                <div class="dropdown-content">
+                  <a href="#">PTSU Research Innovation & Entrepreneurship 1</a>
+                  <a href="#">PTSU Research Innovation & Entrepreneurship 2</a>
+                  <a href="#">PTSU Research Innovation & Entrepreneurship 3</a>
+                  <a href="#">PTSU Research Innovation & Entrepreneurship 4</a>
+                  <a href="#">PTSU Research Innovation & Entrepreneurship 5</a>
+                  <a href="#">PTSU Research Innovation & Entrepreneurship 6</a>
+                  <a href="#">PTSU Research Innovation & Entrepreneurship 7</a>
+                  <a href="#">PTSU Research Innovation & Entrepreneurship 8</a>
+                  <a href="#">PTSU Research Innovation & Entrepreneurship 9</a>
+                  <a href="#">PTSU Research Innovation & Entrepreneurship 10</a>
+                  <li class="dropdown">
+                    <a href="#">Global<i class="fa-solid fa-angle-down marginleftx1"></i></a>
+                    <div class="dropdown-content">
+                      <a href="#">PTSU Global 1</a>
+                      <a href="#">PTSU Global 2</a>
+                      <a href="#">PTSU Global 3</a>
+                      <a href="#">PTSU Global 4</a>
+                      <a href="#">PTSU Global 5</a>
+                      <a href="#">PTSU Global 6</a>
+                      <a href="#">PTSU Global 7</a>
+                      <a href="#">PTSU Global 8</a>
+                      <a href="#">PTSU Global 9</a>
+                      <a href="#">PTSU Global 10</a>
+                      <li class="dropdown">
+                        <a href="#">Updates<i class="fa-solid fa-angle-down marginleftx1"></i></a>
+                        <div class="dropdown-content">
+                          <a href="#">PTSU Updates 1</a>
+                          <a href="#">PTSU Updates 2</a>
+                          <a href="#">PTSU Updates 3</a>
+                          <a href="#">PTSU Updates 4</a>
+                          <a href="#">PTSU Updates 5</a>
+                          <a href="#">PTSU Updates 6</a>
+                          <a href="#">PTSU Updates 7</a>
+                          <a href="#">PTSU Updates 8</a>
+                          <a href="#">PTSU Updates 9</a>
+                          <a href="#">PTSU Updates 10</a>
+                          <li class="dropdown">
+                            <a href="#">Services<i class="fa-solid fa-angle-down marginleftx1"></i></a>
+                            <div class="dropdown-content">
+                              <a href="#">PTSU Service 1</a>
+                              <a href="#">PTSU Service 2</a>
+                              <a href="#">PTSU Service 3</a>
+                              <a href="#">PTSU Service 4</a>
+                              <a href="#">PTSU Service 5</a>
+                              <a href="#">PTSU Service 6</a>
+                              <a href="#">PTSU Service 7</a>
+                              <a href="#">PTSU Service 8</a>
+                              <a href="#">PTSU Service 9</a>
+                              <a href="#">PTSU Service 10</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="box" style="border-radius: 50px; border-top-left-radius: 50px; border-bottom-right-radius: 50px; margin: 5px; margin-bottom: 10px; margin-left: 10px;margin-right: 10px;">
+          <div class="video-container">
+          <video src="Video.mp4" autoplay loop muted></video>
+          </div>
+      </div>
+      <div class="container-1600">
+                  <p style="text-align: justify; font-size: 20px;">The air crackled with tension as the two legendary pirates, Gol D. Roger and Edward Newgate, better known as Whitebeard, faced each other on a remote island amidst turbulent seas in the Grand Line. Their crews watched in awe, knowing that they were witnessing a clash of titans that would go down in history.
+
+                    Both Roger and Whitebeard were seasoned veterans with countless battles under their belts. They had earned the title of the "Pirate King" and the "Strongest Man in the World," respectively. Their reputations preceded them, and their crews knew that this confrontation would be no ordinary skirmish.
+                    
+                    As the battle commenced, the ground shook with each thunderous blow. Roger wielded his sword with finesse, demonstrating his mastery of Haki, the mysterious power that only a select few could harness. Whitebeard, on the other hand, showcased his raw physical strength, able to create quakes and tsunamis with his Devil Fruit power, the Gura Gura no Mi.
+                    
+                    The island itself became a battleground as shockwaves from their attacks reshaped the landscape. The skies darkened with clouds, mirroring the intensity of the clash. The sea roared and churned around them, almost as if nature itself acknowledged the significance of this duel.
+                    
+                    The two pirates exchanged words between strikes, revealing a mutual respect that had developed over years of rivalry. Roger spoke of their shared dreams of reaching the fabled "One Piece" and uncovering the hidden truths of the world. Whitebeard, a man of honor, recognized Roger's passion, but he would not yield his quest to become the Pirate King.</p>
+                <p style="text-align: justify; font-size: 20px;">The crew members of both pirates fought fiercely as well, each group supporting their captain with unwavering loyalty. Marco, Whitebeard's first division commander, clashed with Rayleigh, Roger's right-hand man, in an aerial battle that lit up the sky. Meanwhile, Buggy and Shanks, who would later become famous in their own right, crossed blades in a display of their potential.
+
+                  As the duel raged on, the powers of the two titans seemed evenly matched. The island around them bore the scars of their struggle, but neither Roger nor Whitebeard showed signs of slowing down. Their determination to win, coupled with their mutual respect for one another, pushed them to their limits and beyond.
+                  
+                  In the end, however, the confrontation had to come to a close. Both Roger and Whitebeard recognized that their fight was merely a prelude to the greater journey that awaited them. With a nod of understanding, they decided to end the battle in a draw, showing the world that they were indeed equals.
+                  
+                  As the sun set over the horizon, the crews of both pirates retreated, knowing that this encounter had changed them all. They went their separate ways, each crew filled with a newfound resolve to achieve their dreams. The legend of the clash between Roger and Whitebeard spread throughout the seas, inspiring countless pirates to seek their own destinies and, in the process, shaping the course of history in the world of One Piece.</p>
+      <div>
+          <div class="image-container" style="margin-top: 0px;">
+            <a href="https://www.ustp.edu.ph/awards-recognition/institutional-recognition-accreditation-certification/#QS_Stars" target="_blank"><img src="sharingan1.gif" alt="Image 1"></a>
+            <a href="https://www.ustp.edu.ph/awards-recognition/institutional-recognition-accreditation-certification/#THE" target="_blank"><img src="obito.gif" alt="Image 2"></a>
+            <a href="https://www.ustp.edu.ph/awards-recognition/institutional-recognition-accreditation-certification/#Webometrics" target="_blank"><img src="sharingan2.gif" alt="Image 3"></a>
+            <a href="https://www.ustp.edu.ph/awards-recognition/institutional-recognition-accreditation-certification/#AD_Scientific" target="_blank"><img src="pngegg (1).png" alt="Image 4"></a>
+            <a href="https://www.ustp.edu.ph/awards-recognition/institutional-recognition-accreditation-certification/#EduRank" target="_blank"><img src="sharingan2flip.gif" alt="Image 5"></a>
+            <a href="https://www.ustp.edu.ph/awards-recognition/institutional-recognition-accreditation-certification/#ISO" target="_blank"><img src="obitoflip.gif" alt="Image 6"></a>
+            <a href="https://www.ustp.edu.ph/awards-recognition/institutional-recognition-accreditation-certification/#ISO" target="_blank"><img src="sharingan1flip.gif" alt="Image 7"></a>
+          </div>
+      </div>
+        <div class="sectionfull">
+          <div class="row">
+            <div class="container-1600">
+              <div class="columnx1">
+                <div class="bg-color" style="color:#E50914;text-align: right;padding:10px; border-radius: 8px;">
+                  <h2 style="font-size:28px; margin-top:0px; margin-bottom: 0px; margin-right: 10px;">ABOUT UCHIHA</h2>
+                </div> 
+                <p style="text-align: justify; font-size: 20px;">The Uchiha clan, a venerable and prestigious family within the Hidden Leaf Village, Konohagakure, has long stood as a symbol of prodigious talent and formidable power, revered for their prodigious mastery of ninjutsu and distinguished by the possession of the awe-inspiring Sharingan, an extraordinary kekkei genkai ocular ability that grants its wielders heightened perception, the capacity to copy and mimic techniques, and even conjure potent genjutsu capable of subjugating foes; their unparalleled prowess in combat and strategic acumen elevated their status as a clan of extraordinary significance, and yet, their rich legacy is interwoven with a tumultuous history that becomes tragically marred by heart-rending betrayal, internal strife, and the unimaginable loss of loved ones during the harrowing Uchiha Clan Massacre, orchestrated by one of their own, the prodigious Itachi Uchiha, and later exacerbated by Sasuke Uchiha, Itachi's younger brother, setting in motion a series of complex events that profoundly impact the trajectory of the narrative, notably centering around Sasuke's relentless pursuit of vengeance against his brother's treachery and the trials and tribulations he endures along the path of darkness, leading to a transformative journey of self-discovery and eventual redemption; as the story unfolds, the intricate exploration of the Uchiha's enigmatic legacy becomes inextricably linked with the broader themes of friendship, camaraderie, sacrifice, and the intricate balance between the light and shadow that exists within each individual's heart, rendering the Uchiha clan not only an essential and captivating aspect of the Naruto universe but also emblematic of the profound emotional depth and complexity that underpins the epic tale of ninjas and destiny.</p>
+                <a href="https://www.youtube.com/watch?v=lTuDRcvYfNQ" target="_blank"><img src="madaragif.gif" alt="Madara" style="margin: auto; "width="1400" height="auto"></a>
+                <p style="text-align: justify; font-size: 20px;">Madara Uchiha: Madara is considered one of the most formidable Uchiha in history. He was a co-founder of Konohagakure and possessed immense strength, unparalleled battle prowess, and an indomitable will. Madara was renowned for his mastery over the Sharingan, which evolved into the Rinnegan after acquiring Hashirama Senju's cells. His proficiency in ninjutsu, genjutsu, and taijutsu was second to none. Madara's strategic brilliance and a vast array of techniques, such as the Susanoo and Limbo, made him an overwhelmingly formidable opponent.</p>
+            </div>
+            <div class="button-container">
+              <button class="button6">Learn more about Uchiha Clan</button>
+            </div>
+            <div style="margin-top: 75px;">
+              <img src="sasuke4k.gif" alt="Big Image" style="margin: auto; "width="1400" height="auto">
+            </div>
+            <div style="margin-top: 25px;">
+              <div style="color:#1a1a44;text-align: left;padding: 0px; font-size: 43px;">
+                <h3>Uchiha Clan</h3>
+              </div>
+            </div>
+            <section class="container-card marginbottomx1">
+            <div class="card">
+              <a href="#"><div class="card-image Uchiha1"></div></a>
+              <h2>Madara Uchiha (うちはマダラ) was the legendary leader of the Uchiha Clan.</h2>
+            </div>
+            <div class="card">
+              <a href="#"><div class="card-image Uchiha2"></div></a>
+              <h2>Sasuke Uchiha (うちはサスケ) is one of the last surviving members of Konohagakure's Uchiha clan.</h2>
+            </div>
+            <div class="card">
+              <a href="#"><div class="card-image Uchiha3"></div></a>
+              <h2>Obito Uchiha (うちはオビト) was a member of Konohagakure's Uchiha clan and was a member of the old team 7.</h2>
+            </div>
+            <div class="card">
+              <a href="#"><div class="card-image Uchiha4"></div></a>
+              <h2>Indra Uchiha (大筒木インドラ) was the first born son of Hagoromo Ōtsutsuki and the founder of the Uchiha Clan.</h2>
+            </div>
+            </section>
+            <section class="container-card marginbottomx1">
+              <div class="card">
+                <a href="#"><div class="card-image Uchiha5"></div></a>
+                <h2>Itachi Uchiha (うちはイタチ) was a shinobi from the Uchiha clan, an Anbu Captain, and Sasuke's biological brother. </h2>
+              </div>
+              <div class="card">
+                <a href="#"><div class="card-image Uchiha6"></div></a>
+                <h2 style="margin: 3px;">Shin Uchiha (うちはシン) was a highly capable ninja and former test subject of Orochimaru.</h2>
+              </div>
+              <div class="card">
+                <a href="#"><div class="card-image Uchiha7"></div></a>
+                <h2>Shisui Uchiha(うちはシスイ) "Shisui of the Body Flicker" Sharingan wielder who awakened his abilities at a young age.</h2>
+              </div>
+              <div class="card">
+                <a href="#"><div class="card-image Uchiha8"></div></a>
+                <h2 style="margin: 1px;">Sarada Uchiha (うちはサラダ) a chūnin-level kunoichi from Uchiha Clan and Sasuke Uchiha's daughter.</h2>
+              </div>
+              </section>
+              <div class="button-container">
+                <button class="button" style="width: 100%;">Top Strongest Shinobi from Uchiha Clan</button>
+              </div>
+              <div style="margin-top: 25px;">
+                <div style="color:#1a1a44;text-align: left;padding: 0px; font-size: 43px;">
+                  <h3>One Piece [Highest Bounties]</h3>
+                </div>
+              </div>
+              <section class="container-card marginbottomx1">
+              <div class="card-media">
+                <a href="#"><div class="card-image card-media-1"></div></a>
+                <div class="button-container" style="padding-left: 20px; padding-right: 20px;">
+                  <button class="button" style="width: 100%;">Gol D. Roger</button>
+                </div>              
+              </div>
+              <div class="card-media">
+                <a href="#"><div class="card-image card-media-2"></div></a>
+                <div class="button-container" style="padding-left: 20px; padding-right: 20px;">
+                  <button class="button" style="width: 100%;">Edward Newgate</button>
+                </div> 
+              </div>
+              <div class="card-media marginbottomx1">
+                <a href="#"><div class="card-image card-media-3"></div></a>
+                <div class="button-container" style="padding-left: 20px; padding-right: 20px;">
+                  <button class="button" style="width: 100%;">Kaido</button>
+                </div> 
+              </div>
+             </section>
+            <div class="bg-color" style="color:#ffffff;text-align: right;padding:10px; border-radius: 8px;">
+              <h2 style="font-size:28px; margin-top:0px; margin-bottom: 0px; margin-right: 10px;">ONE PIECE CORNER</h2>  
+            </div>
+            <div style="margin-top: 75px;">
+              <a href=""><img src="onepiececorner.jpg" alt="Big Image" style="margin: auto; "width="1400" height="auto"></a>
+            </div> 
+            <h2 style="font-size:28px; margin-top: 50px; margin-bottom: 10px; margin-right: 10px; text-align: center;">One Piece Crew</h2>  
+            <div class="bg-color" style="color:#ffffff;text-align: right;padding:10px; border-radius: 8px;">
+              <h2 style="font-size:28px; margin-top:0px; margin-bottom: 0px; margin-right: 10px;">Rocks Pirates</h2>  
+            </div>
+            <section class="container-card">
+              <div class="card-temporary" style="padding: 40px;">
+                <img src="rocks.png" alt="" style="width: 720px; border: 4px solid black; margin-left: -40px; transition-timing-function: ease-in; transform: scaleX(1.05);">
+              </div>
+              <div class="card-temporary" style="padding: 40px; padding-left: 0px;">
+                <h2>Rocks Pirates</h2>
+                <p>While the Roger Pirates are the only known crew to reach the end of the Grand Line, an even more powerful crew once opposed them: the Rocks Pirates. Led by the mysterious Rocks D. Xebec, the Rocks Pirates were so powerful that it took an alliance between the Roger Pirates and Monkey D. Garp to take them down.
+
+                  The Rocks Pirates were known for acquiring new crewmates through Davy Back Fights, which is likely how they assembled names like Rocks, Kaido, Whitebeard, Shiki, and Big Mom under one banner. Whenever this crew finally plays a role in One Piece's narrative, the true limits of their strength will become painfully clear.</p>
+                <button class="button">Known to be the Strongest</button>
+              </div>
+              </section>
+                <div class="bg-color" style="color:#ffffff;text-align: right;padding:10px; border-radius: 8px;">
+                  <h2 style="font-size:28px; margin-top:0px; margin-bottom: 0px; margin-right: 10px;">Top Pirate Crew</h2>  
+                </div>
+                <section class="container-card2">
+                  <div class="card-temporary" style="padding: 40px;">
+                    <img src="roger.png" alt="" style="width: 100%; border: 4px solid black;     margin-top: 38px; transition-timing-function: ease-in; transform: scaleX(1.05);">
+                  </div>
+                  <div class="card-temporary" style="padding: 40px; padding-left: 0px;margin-top: -23px;  ">
+                    <h2>Roger Pirates</h2>
+                    <p>Gol D. Roger may have become the King of the Pirates, but this would have never been possible if not for the support of an equally impressive crew. The Roger Pirates are the only known pirate crew to ever navigate the entirety of the Grand Line, and in the process, they inspired multiple generations to pursue similar dreams.</p>
+                    <p>Roger's infectious personality and impressive strength drew noteworthy pirates to his ship like moths to a flame, allowing him to craft the most impressive collection of good-natured pirates in pirate history. Silvers Rayleigh, Kozuki Oden, Crocus, and a young Shanks all served as part of the Roger Pirates, so when they came to blows with other pirates or the World Government, they likely encountered little opposition.</p>
+                    <button class="button">Top 1</button>
+                  </div>
+                  </section>
+                  <section class="container-card marginbottomx1">
+                    <div class="card-temporary" style="padding: 20px;">
+                      <h2 style="text-align: right;">Whitebeard Pirates</h2>
+                      <p>The Whitebeard Pirates first encounter Monkey D. Luffy in One Piece's Marineford Arc, and although they are incredibly still powerful, their glory days have long passed. During the days of Gol D. Roger, Edward Teach and his crew were arguably the only true rivals to the King of the Pirates, lasting for over twenty years after his death.</p>
+                      <p>Whitebeard's awe-inspiring power is what makes the Whitebeard Pirates truly legendary, but officers like Marco the Phoenix, Kozuki Oden, and Vista are world-class fighters as well. If Blackbeard had not taken advantage of Whitebeard's kind heart, then the Whitebeard Pirates would likely still sit atop the hierarchy of the Grand Line.</p>
+                      <button class="button" style="text-align: center !important; margin-left:520px;">Top 2</button>
+                    </div>
+                    <div class="card-temporary" style="padding: 40px; padding-left: 0px;">
+                      <img src="whitebeard.png" alt="" style="width: 100%; border: 4px solid black;">
+                    </div>
+                    </section>
+                    <div class="bg-color" style="color:#ffffff;text-align: right;padding:10px; border-radius: 8px;">
+                      <h2 style="font-size:28px; margin-top:0px; margin-bottom: 0px; margin-right: 10px;"> Top Pirate Crew: New Generation</h2>  
+                    </div>
+                    <section class="container-card" style="margin-bottom: -170px;">
+                      <div class="card-temporary" style="padding: 40px; height: auto !important; margin-right: -330px;">
+                        <img src="newgen1.png" alt="" style="width: 60%; border: 4px solid black;">
+                      </div>
+                      <div class="card-temporary" style="padding: 40px; padding-left: 0px;">
+                        <h2 style="margin-top: 0px;">Blackbeard Pirates</h2>
+                        <p>Usurping the status of the Whitebeard Pirates helped the Blackbeard Pirates quickly rise up the ranks, and they haven't looked back since. Their captain, Marshall D. Teach, is arguably as infamous as any since Rocks D. Xebec, and his officers, the Ten Titanic Commanders, are an elite group of scoundrels hand-picked from throughout the Grand Line.</p>
+                        <p>Teach's powers, which include two separate Devil Fruits, are scary enough on their own. However, with figures like the former Head Jailer of Impel Down, Shiryu, and the former Marine Admiral, Kuzan, under his command, even the World Government should be worried.</p>
+                        <button class="button4">Top 1</button>
+                      </div>
+                      </section>
+                      <section class="container-card" style="margin-bottom: -170px;">
+                        <div class="card-temporary" style="padding: 40px; height: auto !important; margin-right: -330px;">
+                          <img src="newgen2.png" alt="" style="width: 60%; border: 4px solid black;">
+                        </div>
+                        <div class="card-temporary" style="padding: 40px; margin-top: auto; padding-left: 0px;">
+                          <h2 style="margin-top: 0px;">Red Hair Pirates </h2>
+                          <p>PTSU Jasaan is a satellite campus in Jasaan, Misamis Oriental. It has a total land area of 1.6 hectares and is the University’s hub for Naval Architecture and Marine Engineering. It is the first of its kind in Mindanao and is touted to strengthen the country’s Marine Engineering and Naval Architecture landscape.</p>
+                          <button class="button4">Top 2</button>
+                        </div>
+                        </section>
+                        <section class="container-card" style="margin-bottom: -170px;">
+                          <div class="card-temporary" style="padding: 40px; height: auto !important; margin-right: -330px;">
+                            <img src="newgen3.png" alt="" style="width: 60%; border: 4px solid black;">
+                          </div>
+                          <div class="card-temporary" style="padding: 40px; margin-top: auto; padding-left: 0px;">
+                            <h2 style="margin-top: 0px;">Straw Hat Grand Fleet </h2>
+                            <p>The Straw Hat Pirates are well on their way to becoming the most prolific pirate crew in One Piece history. Their captain, Monkey D. Luffy, causes trouble for the World Government at every turn, and with the formation of the Straw Hat Grand Fleet, he's prepared to properly assume his position as one of the Emperors of the Sea.</p>
+                            <button class="button4">Top 3</button>
+                          </div>
+                          </section>
+                          <section class="container-card" style="margin-bottom: -170px;">
+                            <div class="card-temporary" style="padding: 40px; height: auto !important; margin-right: -330px;">
+                              <img src="newgen4.png" alt="" style="width: 60%; border: 4px solid black;">
+                            </div>
+                            <div class="card-temporary" style="padding: 40px; margin-top: auto; padding-left: 0px;">
+                              <h2 style="margin-top: 0px;">Beast Pirates</h2>
+                              <p>For many years, Kaido was teased as the World's Strongest Creature, and throughout the Wano Country Arc, One Piece fans finally saw why. The Emperor of the Sea and his crew, the Beast Pirates, challenged the Straw Hat Pirates and their allies more than any opponent in the series' history. While they were eventually defeated, the loss shouldn't undermine their frightening abilities.</p>
+                              <button class="button4">Top 4</button>
+                            </div>
+                            </section>
+                            <section class="container-card" style="margin-bottom: -170px;">
+                              <div class="card-temporary" style="padding: 40px; height: auto !important; margin-right: -330px;">
+                                <img src="newgen5.png" alt="" style="width: 60%; border: 4px solid black;">
+                              </div>
+                              <div class="card-temporary" style="padding: 40px; margin-top: auto; padding-left: 0px;">
+                                <h2 style="margin-top: 0px;">Big Mom Pirates</h2>
+                                <p>As a former member of the Rocks Pirates, Charlotte Linlin — better known as Big Mom — is one of the most influential pirates of all time. Her strength earned her a spot among the Warlords of the Sea, and were it not for her actions, even pirates like Kaido would likely not be the legends that they are by the events of One Piece.</p>
+                                <button class="button5">Top 5</button>
+                              </div>
+                              </section>
+                            </div>
+                          </div>
+                        </body>
+                        <footer style="width: 100%; margin: auto auto; padding-top:  70px;">
+                          <div class="container-footer">
+                            <div class="image-container2" style="margin-top: 0px; background-color: #e6dada; margin-top: 40px; text-align: center; margin:-0%;">
+                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNP_IJZjvYkBYnAzfgRGFD273OyqxmedANWowy55Rg9DLG7Q/viewform"target="_blank"><img src="QR1.png" style="margin-top: -67px;
+                                width: 97%;" alt="Image 1"></a>
+                            </div>
+                          </div>
+                          <div class="container-footer">
+                            <div class="image-container" style="margin-top: 0px; background-color: #f3f3f3;">
+                              <div style="text-align: center;"><a href="#"><img src="Strawhatflag.png" alt="Image 1"></a><br><p style="margin-top: -15px;">Straw Hat Pirates</p></div>
+                              <div style="text-align: center;"><a href="#"><img src="RedhairFlag.png" alt="Image 1"></a><br><p style="margin-top: -15px;">Red Hair Pirates</p></div>
+                              <div style="text-align: center;"><a href="#"><img src="Blackbeardflag.png" alt="Image 1"></a><br><p style="margin-top: -15px; margin-left: 5px;">Blackbeard Pirates</p></div>
+                              <div style="text-align: center;"><a href="#"><img src="WhitebeardFlag.png" alt="Image 1"></a><br><p style="margin-top: -15px;">Whitebeard</p></div>
+                              <div style="text-align: center;"><a href="#"><img src="RogerFlag.png" alt="Image 1"></a><br><p style="margin-top: -15px;">Roger Pirates</p></div>
+                              <div style="text-align: center;"><a href="#"><img src="BeastFlag.png" alt="Image 1"></a><br><p style="margin-top: -15px;">Beast Pirates</p></div>
+                              <div style="text-align: center;"><a href="#"><img src="Bigmomflag.png" alt="Image 1"></a><br><p style="margin-top: -15px;">Big Mom Pirates</p></div>
+                              <div style="text-align: center;"><a href="#"><img src="Buggyflag.png" alt="Image 1"></a><br><p style="margin-top: -15px;">Buggy Pirates</p></div>
+                              <div style="text-align: center;"><a href="#"><img src="DonquixoteFlag.png" alt="Image 1"></a><br><p style="margin-top: -15px;">Donquixote Pirates</p></div>
+                            </div>
+                        </div>
+                         <div style="width:100%; background-color:#9941eb;">
+                          <div class="container-1600" style="background-color: #c7b8d6;">
+                            <section class="container-card">
+                              <div class="card-temporary" style="padding-top: 40px; height: auto !important; width: 20%;">
+                                <img src="ustplogo.png" alt="" style="width: 100%;">
+                              </div>
+                              <div class="card-temporary" style="padding-top: 40px; height: auto !important; width: 20%; margin-right: 65px;">
+                                <span style="color: #000000;">
+                                  <h2>QUOTE OF THE DAY.</h2>
+                                  <p>Arrogance breeds complacency, complacency breeds failure.</p>
+                                  <a href="#" style="text-decoration: none;"><p style="color: rgb(0, 0, 0);">lmao.</p></a>
+                                </span>
+                              </div>
+                              <div class="card-temporary" style="padding-top: 40px; height: auto !important;width: 20%;margin-right: 65px;">
+                                <span style="color: #000000;">
+                                  <h2>Code is not the goal, eyebags is.</h2>
+                                  <p> The temporary satisfaction of quitting is outweighed by the eternal suffering of being a nobody.</p>
+                                  <a href="#" style="text-decoration: none;"><p style="color: rgb(0, 0, 0);">Submitted By:</p></a>
+                                  <a href="#" style="text-decoration: none;"><p style="color: rgb(0, 0, 0);">Danz Bjerfstin E. Famas</p></a>
+                                  <a href="#" style="text-decoration: none;"><p style="color: rgb(0, 0, 0);">Submitted To:</p></a>
+                                  <a href="#" style="text-decoration: none;"><p style="color: rgb(0, 0, 0);">Sir. Marlon M. Bajolo</p></a>
+                                </span>
+                              </div>
+                              <div class="card-temporary" style="padding-top: 40px; height: auto !important;width: 20%;margin-right: 65px;">
+                                <span style="color: #000000;">
+                                  <h2>IT223 - Midyear</h2>
+                                  <a href="" style="text-decoration: none;"><p style="color: rgb(0, 0, 0);"></p></a>
+                                </span>
+                              </div>
+                              <div class="card-temporary" style="padding-top: 40px; height: auto !important;width: 20%;margin-right: 65px; margin-left: -100px;">
+                                <img src="footer1.png" alt="" style="width: 130%; ">
+                              </div>
+                              </section>
+                            <section class="container-card">
+                              <hr style="width: 100%; color: #000000;">
+                            </section>
+                            <section class="container-card">
+                              <p style="color: rgb(0, 0, 0); text-align: left; flex: start; margin-right: auto; margin-left: 1px;">© JULY 27, 2023</p>
+                              <a href="#" style="text-decoration: none;"><p style="color: rgb(0, 0, 0); margin-left: auto;">Whooop diara! | Ambatupass</p></a>
+                            </section>
+                          </div>
+                         </div>
+                        </footer>
+                      </html>
